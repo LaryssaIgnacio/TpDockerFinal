@@ -1,0 +1,13 @@
+services:
+  site:
+    build: ./site
+    image: meu-site-nginx:1.0
+    container_name: site-nginx
+    ports:
+      - "8080:80"
+
+  app:
+    image: httpd:alpine
+    container_name: app-httpd
+    ports:
+      - "8081:80"
