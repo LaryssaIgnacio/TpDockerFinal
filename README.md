@@ -10,13 +10,14 @@ Criar um ambiente com dois containers Docker orquestrados com Docker Compose:
 - **app**: servidor HTTP Apache (httpd) (porta 8081)
 
 ## Estrutura
+```text
 tp-docker/
 ├── docker-compose.yml
 ├── README.md
 └── site/
-├── Dockerfile
-└── index.html
-
+    ├── Dockerfile
+    └── index.html
+```
 
 ## Como executar
 ```bash
